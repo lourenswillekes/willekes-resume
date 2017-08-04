@@ -1,47 +1,48 @@
 \documentclass[12pt]{article}
 \usepackage{anyfontsize}
+\usepackage{calc}
 \usepackage{fontspec}
 \setmainfont{Times New Roman}
 
 \title{willekeslresume}
 
+\newlength{\remaining}
+\newcommand{\titleline}[1]{%
+\setlength{\remaining}{\textwidth-\widthof{\textsc{#1}}}
+\noindent\underline{\textsc{#1}\hspace*{\remaining}}\par}
+
 \begin{document}
 
 {\noindent
-	{\large{\underline{\textbf{Lourens Willekes}}}} \\
-    lourw95@gmail.com \\
+	{\large{\underline{\textbf{Lourens Willekes}}}} | lourw95@gmail.com | willekel@mail.gvsu.edu \\
      \quad \\
-    \textbf{EDUCATION} \\
-    \rule{21cm}{0.4pt}
-    \textbf{Grand Valley State University} Expected: Spring 2018 \\
+	\titleline{\textbf{EDUCATION}}
+    \noindent\textbf{Grand Valley State University} \hfill Expected: Spring 2018 \\
     Bachelor of Science in Engineering; Computer Engineering \\
     GPA: 3.9 \\
     \\
-    \textbf{SKILLS} \\
-    \rule{21cm}{0.4pt}
-    \textbf{Programming languages} - C; C++; Python; Java \\
-    \textbf{Problem solving skills} - Critical, meticulous, analytical, and creative. \\
+    \textbf{Coursework} - System Programming; Data Structures and Algorithms; Operating Systems Concepts; Embedded System Design; Design of Microcontroller Applications \\
+    \textbf{Computer Skills} - C/C++; Python; Java; Git/SVN; Linux/Unix; JIRA \\
     \\
-    \textbf{ACTIVITIES/PROJECTS} \\
-    \rule{21cm}{0.4pt}
-    \textbf{Science Olympiad} - On the team five years during middle/high school. Extracurricular study and competition in mathematics, sciences, experimental, technical problem solving, etc. \\
+    \titleline{\textbf{PROJECTS}}
+    \noindent\textbf{Deep Learning Classifier} -  \\
     \\
-    \textbf{WORK EXPERIENCE} \\
-    \rule{21cm}{0.4pt}
-    \textbf{DornerWorks Ltd} 2015-1016 \\
-     - Worked on a bug fixing team for GE's Aircraft Health Management System. Interacted directly with the customer to solve problems with their system. \\
-     - Firmware testing for X-Rite Intellitrax. Wrote embedded C functions for Dexter Laundry. \\
+    \titleline{\textbf{WORK EXPERIENCE}}
+    \noindent\textbf{DornerWorks Ltd} \hfill 2015-1016 \\
+     - Worked on a bug fixing team and updated requirements for GE's Aircraft Health Management System. \\
+     - Gained experience interacting directly with customers to solve problems with their systems. \\
+     - Tested and verified firmware commands for X-Rite Intellitrax. \\
+     - Designed functions and created a test device for Dexter Laundry's Drying Machine. Wrote Python code to interpret C structures for the DAQ unit. \\
      - Maintained continuous integration testing for Xen hypervisor on the Zynq platform. \\
-     \textbf{Thunder Mountain Holdings} 2011-2014 \\
+     \textbf{Thunder Mountain Holdings} \hfill 2011-2014 \\
      - Managing/working with a team on busy dats, as well as handling the site individually at other times. \\
      - Extensive experience with greeting/dealing with customers and meeting their expectations. \\
      - Meticulous when necessary, pay attention to detail well. \\
-     \textbf{MaxAir Trampolines} 2014 \\
+     \textbf{MaxAir Trampolines} \hfill 2014 \\
      - Part-time employment, aided in the design of an inflatable tent, as well as the manufacturing of trampolines/equipment. \\
      \\
-     \textbf{REFERENCES} \\
-     \rule{21cm}{0.4pt}
-     Available upon request. \\
+    \titleline{\textbf{REFERENCES}}
+    \noindent Available upon request. \\
       
 }
 
